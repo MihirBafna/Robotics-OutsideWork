@@ -6,8 +6,17 @@
 /*----------------------------------------------------------------------------*/
 
 #pragma once
-
+#include "Joystick.h"
+#include <WPIlib.h>
 class OI {
+private:
+	Joystick* driveStickLeft;
+	Joystick* driveStickRight;
+
 public:
 	OI();
+	~OI();
+
+	Joystick* getDriveStickLeft();
+	Joystick* getDriveStickRight();
 };

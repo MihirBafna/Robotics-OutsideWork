@@ -8,6 +8,7 @@
 #pragma once
 #include "ctre/Phoenix.h"
 #include <Commands/Subsystem.h>
+#include "Robot.h"
 
 class DriveTrain : public frc::Subsystem {
 private:
@@ -16,6 +17,7 @@ private:
 
 public:
 	DriveTrain();
+	void TankDrive(double rightspeed, double leftspeed);
 	void InitDefaultCommand() override;
 };
 

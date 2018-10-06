@@ -6,6 +6,7 @@
 /*----------------------------------------------------------------------------*/
 
 #include "TankDrive.h"
+#include "Robot.h"
 
 TankDrive::TankDrive() {
 	// Use Requires() here to declare subsystem dependencies

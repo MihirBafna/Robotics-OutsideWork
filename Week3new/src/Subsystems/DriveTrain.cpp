@@ -14,6 +14,11 @@ left(new TalonSRX(kLeftMotor)),right(new TalonSRX(kRightMotor))
 
 }
 
+void DriveTrain::TankDrive(double rightspeed, double leftspeed){
+	left->Set(ControlMode::Velocity,leftspeed);
+	right->Set(ControlMode::Velocity, rightspeed);
+}
+
 void DriveTrain::InitDefaultCommand() {
 	// Set the default command for a subsystem here.
 	// SetDefaultCommand(new MySpecialCommand());

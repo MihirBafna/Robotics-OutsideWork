@@ -6,9 +6,18 @@
 /*----------------------------------------------------------------------------*/
 
 #include "OI.h"
+#include "Commands/TankDrive.h"
 
 #include <WPILib.h>
 
-OI::OI() {
-	// Process operator interface input here.
+OI::OI():driveStickLeft(new Joystick(2)), driveStickRight(new Joystick(1)) {
+
+
+}
+Joystick* OI::getDriveStickLeft() {
+	return driveStickLeft;
+}
+
+Joystick* OI::getDriveStickRight() {
+	return driveStickRight;
 }
